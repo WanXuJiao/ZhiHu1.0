@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_table_background"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/recommend001"
+        android:background="@drawable/selector_list_view"
+        />
+    <TextView
+        android:id="@+id/tv_roundtable_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MIUI设计主题"
+        android:textColor="@android:color/white"
+        android:paddingTop="150dp"
+        android:paddingLeft="30dp"
+        />
+    <TextView
+        android:id="@+id/tv_table_lookaround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="624578次浏览·9319人关注"
+        android:paddingTop="180dp"
+        android:textSize="11sp"
+        android:paddingLeft="30dp"
+        />
+
+</RelativeLayout>

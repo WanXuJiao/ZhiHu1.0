@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_concern_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/head1"
+            />
+
+        <TextView
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:id="@+id/tv_concern_givenname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_concern_icon"
+            android:paddingLeft="6dp"
+            android:text="如烟"
+             />
+
+        <TextView
+            android:paddingLeft="6dp"
+            android:id="@+id/tv_concern_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_concern_icon"
+            android:paddingTop="22dp"
+            android:text="是我"
+            android:textColor="#77000000"
+            android:maxLines="2"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--AppBarLayout 是继承LinerLayout实现的一个ViewGroup容器组件，它是为了Material Design设计的AppBar，支持手势滑动操作-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--ToolBar 相当于之前ActionBar-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/titleblue"
+            android:elevation="20dp"
+            android:minHeight="30dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_menu_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightblue">
+
+                    <ImageView
+                        android:id="@+id/iv_menu_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/et_menu_search"
+                        android:layout_alignTop="@+id/et_menu_search"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/abc_ic_search" />
+
+                    <EditText
+                        android:id="@+id/et_menu_search"
+                        android:layout_width="260dp"
+                        android:layout_height="40dp"
+                        android:layout_toRightOf="@id/iv_menu_search"
+                        android:background="@null"
+                        android:hint="搜索话题,问题或人" />
+
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/iv_live_tiny"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_alignBottom="@+id/rl_menu_search"
+                    android:layout_alignTop="@+id/rl_menu_search"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/rl_menu_search"
+                    android:background="@drawable/selector_button"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_live_tiny" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        android:id="@+id/lv_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"></ListView>
+    <!--和CoordinatorLayout协调使用-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="10dp"
+        android:src="@drawable/fab_add"
+        app:backgroundTint="@color/addicon"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+</android.support.design.widget.CoordinatorLayout>

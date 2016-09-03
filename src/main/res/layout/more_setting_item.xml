@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/selector_msi">
+
+    <ImageView
+        android:id="@+id/iv_more_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:src="@drawable/ic_remove_red_eye_white_18dp"
+        android:tint="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_moretext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_more_icon"
+        android:paddingLeft="15dp"
+        android:text="我的关注"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_more_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/tv_moretext"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/list_divider"
+        android:tint="@android:color/darker_gray"></ImageView>
+
+    <Switch
+        android:id="@+id/switch_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="10dp"
+        android:visibility="invisible"
+         />
+
+</RelativeLayout>

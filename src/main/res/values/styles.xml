@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/titleblue</item>
+    </style>
+    <style name="ImageViewStyle"  >
+        <item name="android:layout_weight">1</item>
+        <item name="android:tint">@android:color/darker_gray</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="bottomStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="MyAppTheme" parent= "Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <!--<style name="DayTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorTitle">@color/titleblue</item>
+        <item name="colorMenu">#fff</item>
+        <item name="colorBackground">#fff</item>
+        <item name="textColor">@color/daytext</item>
+        <item name="titleTextColor">#000</item>
+    </style>-->
+
+    <!--<style name="NightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorTitle">@color/nighttitle</item>
+        <item name="colorMenu">@color/nighttitle</item>
+        <item name="colorBackground">@color/nightbackground</item>
+        <item name="textColor">@color/nighttext</item>
+        <item name="titleTextColor">#fff</item>
+    </style>-->
+
+</resources>

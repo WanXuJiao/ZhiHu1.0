@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lightblue">#4BA1ED</color>
+    <color name="titleblue">#1e88e5</color>
+    <color name="addicon">#FFCA28</color>
+    <color name="base_bg">#F8F6F0</color>
+    <color name="lightwhite">#e4dbdb</color>
+    <color name="protectEyesGreen">#EEF3FA</color>
+
+    <color name="nighttitle">#263238</color>
+    <color name="nighttext">#A3ABAE</color>
+    <color name="nightbackground">#37474F</color>
+
+    <color name="daytext">#949391</color>
+
+</resources>

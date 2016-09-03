@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MorePersonalSettingItem">
+        <attr name="moretext" format="string" ></attr>
+        <attr name="isShowLine" format="boolean"></attr>
+        <attr name="moreicon" format="reference"></attr>
+        <attr name="isShowToggle" format="boolean"></attr>
+    </declare-styleable>
+
+</resources>
